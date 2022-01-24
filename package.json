@@ -1,0 +1,22 @@
+{
+  "name": "verbruggeemmanuel_3_24012022-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Winters67/VerbruggeEmmanuel_3_24012022-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Winters67/VerbruggeEmmanuel_3_24012022-/issues"
+  },
+  "homepage": "https://github.com/Winters67/VerbruggeEmmanuel_3_24012022-#readme",
+  "dependencies": {
+    "sass": "^1.49.0"
+  }
+}
