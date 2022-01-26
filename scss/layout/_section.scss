@@ -1,0 +1,80 @@
+// restaurants
+
+.section_picture {
+  background-color: $bg-page;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+
+    font-size: 3rem;
+    margin-left: 4rem;
+  }
+
+  .menu_1,
+  .menu_2,
+  .menu_3,
+  .menu_4 {
+    height: auto;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem
+  }
+}
+
+
+
+// définition des images
+.picture_index {
+  @include img_index;
+}
+
+
+
+// texte sous les images
+
+.picture_text {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  @include text_img;
+
+  h3 {
+
+    margin: 0.2rem;
+    padding: 0.2rem;
+    font-size: 2.5rem;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  p {
+    grid-area: 2 / 1 / 3 / 2;
+    margin: 0.2rem;
+    padding-bottom: 0.8rem;
+
+  }
+
+  .like {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    @include coeur;
+    grid-area: 1 / 2 / 3 / 3;
+    font-size: 4rem;
+
+
+
+  }
+
+
+
+}

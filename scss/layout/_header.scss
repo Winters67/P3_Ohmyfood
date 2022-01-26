@@ -1,0 +1,22 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+// fonctionnement
+
+.fonction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 7rem;
+
+    h1 {
+        width: 100%;
+        margin: 2rem 3rem;
+        text-align: center;
+        padding-right: 13rem;
+        font-size: 2.5rem;
+    }
+}

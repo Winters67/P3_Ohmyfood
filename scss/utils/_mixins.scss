@@ -1,0 +1,99 @@
+// boutton
+
+@mixin btn1 {
+    background: linear-gradient(to bottom, #ff79da, #9356dc);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    margin: 2rem;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    width: 25rem;
+    box-shadow: 0px 6px 13px 0px #bebebe;
+}
+
+// menu fonctionnement
+
+@mixin cell {
+    box-shadow: 0px 6px 13px 0px #bebebe;
+    font-size: 1.6rem;
+    border-radius: 25px;
+    padding: 0.5rem;
+    margin: 1rem 0.5rem;
+    font-weight: 700;
+    border: none;
+    text-align: left;
+    width: 90%;
+}
+
+
+// étiquette nouveau 
+
+@mixin news {
+    display: inline-block;
+    border: 1px solid #99e299;
+    background-color: #99e2d0;
+    color: #0a8d6d;
+    border-radius: 2px;
+    padding: 1rem 2rem;
+    z-index: auto;
+    font-weight: 900;
+}
+
+// image 
+
+@mixin img_index {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+
+// texte sous l'image
+
+@mixin text_img {
+    background-color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: auto;
+    height: 100%;
+    padding: 1rem;
+    margin-top: -1rem;
+    z-index: 0;
+}
+
+// Animation coeur
+
+@mixin coeur {
+
+    .far {
+        font-size: 4rem;
+        position: absolute;
+
+        &:hover {
+            cursor: pointer;
+            z-index: 2;
+            animation: vide 1s forwards linear;
+
+
+            &+i {
+                opacity: 1;
+                transform: scale(1);
+                transition: 1s linear;
+            }
+        }
+
+    }
+
+    .fas {
+        position: absolute;
+        opacity: 0;
+        background: linear-gradient(to top, #ff79da, #9356dc);
+        -webkit-background-clip: text;
+        color: transparent;
+        transform-origin: bottom;
+        transform: scale(0);
+    }
+}

@@ -1,0 +1,17 @@
+// base
+@import "./scss/base/reset";
+
+// utils
+@import './scss/utils/variables';
+@import "./scss/utils/mixins";
+
+// components
+@import './scss/components/button';
+@import './scss/components/figures';
+@import './scss/components/animation';
+
+// layout
+@import "./scss/layout/footer";
+@import "./scss/layout/header";
+@import "./scss/layout/section";
+@import "./scss/layout/form";

@@ -1,0 +1,51 @@
+.btn {
+  @include btn1;
+
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(to top, #ff79da, #9356dc);
+  }
+}
+
+
+// fonctionnement 3 items
+
+.btn_menu {
+  width: 100%;
+
+  background-color: $bg-page;
+  @include cell;
+
+  span {
+    text-align: center;
+    position: relative;
+    left: -25px;
+    font-size: 1rem;
+    padding: 12px 14px;
+    margin: 5px;
+    background-color: $primary;
+    color: white;
+    border-radius: 20px;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  i {
+    color: $c-icon;
+    margin-right: 4rem;
+    font-size: 2rem;
+    padding: 2rem 0.2rem;
+
+    :hover {
+      color: $primary;
+    }
+  }
+}
+
+.btn_menu:hover {
+  background-color: $color-cell;
+
+  i {
+    color: $primary;
+  }
+}
