@@ -78,7 +78,15 @@ p {
   @include coeur;
   grid-area: like;
   font-size: 3rem;
+}
 
+// Page menu
+
+.page_menu {
+
+  background-color: $bg-page;
+  padding-top: -5rem;
+  margin-top: -5rem;
 
 
 }
