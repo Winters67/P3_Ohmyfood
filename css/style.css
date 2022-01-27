@@ -84,6 +84,23 @@ img {
   color: #9356dc;
 }
 
+.nouveau {
+  align-content: flex-end;
+  display: inline-block;
+  border: 1px solid #99e299;
+  background-color: #99e2d0;
+  color: #0a8d6d;
+  border-radius: 2px;
+  padding: 1px 10px;
+  margin: 5px;
+  z-index: auto;
+  font-weight: 700;
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
 .menu_1,
 .menu_2,
 .menu_3,
@@ -93,16 +110,6 @@ img {
   padding: 0.5rem;
 }
 
-@keyframes full_heart {
-  0% {
-    transform: scaleY(0.4);
-    transform-origin: 0% 100%;
-  }
-  100% {
-    transform: scaleY(1);
-    transform-origin: 0% 100%;
-  }
-}
 @keyframes vide {
   0% {
     opacity: 1;
@@ -125,14 +132,18 @@ footer {
 footer .logo_footer {
   color: white;
   margin: 2rem;
+  font-family: Shrikhand, cursive;
 }
-footer li {
-  margin: 1rem;
+footer ul {
+  padding-bottom: 3rem;
 }
-footer li i {
-  margin: 1rem;
+footer ul li {
+  margin: 0.5rem 2rem;
 }
-footer li a {
+footer ul li i {
+  margin-right: 1rem;
+}
+footer ul li a {
   cursor: pointer;
   text-decoration: none;
   color: white;
@@ -153,8 +164,7 @@ footer li a {
 .fonction h1 {
   width: 100%;
   margin: 2rem 3rem;
-  text-align: center;
-  padding-right: 13rem;
+  padding-left: 1rem;
   font-size: 2.5rem;
 }
 
@@ -162,19 +172,20 @@ footer li a {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 5rem 1rem;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 .section_picture h1 {
   font-size: 3rem;
-  margin-left: 4rem;
+  width: 100%;
 }
 .section_picture .menu_1,
 .section_picture .menu_2,
 .section_picture .menu_3,
 .section_picture .menu_4 {
+  position: relative;
   height: auto;
   width: 100%;
   padding: 0.5rem;
@@ -194,6 +205,7 @@ footer li a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "h3 h3 like" "p p like";
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-color: white;
@@ -205,40 +217,44 @@ footer li a {
   margin-top: -1rem;
   z-index: 0;
 }
-.picture_text h3 {
+
+h3 {
   margin: 0.2rem;
   padding: 0.2rem;
-  font-size: 2.5rem;
-  grid-area: 1/1/2/2;
+  font-size: 2rem;
+  font-weight: 900;
+  grid-area: h3;
 }
-.picture_text p {
-  grid-area: 2/1/3/2;
+
+p {
+  grid-area: p;
   margin: 0.2rem;
   padding-bottom: 0.8rem;
 }
-.picture_text .like {
+
+.like {
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: flex-end;
-  grid-area: 1/2/3/3;
-  font-size: 4rem;
+  grid-area: like;
+  font-size: 3rem;
 }
-.picture_text .like .far {
-  font-size: 4rem;
+.like .far {
+  font-size: 3rem;
   position: absolute;
 }
-.picture_text .like .far:hover {
+.like .far:hover {
   cursor: pointer;
   z-index: 2;
   animation: vide 1s forwards linear;
 }
-.picture_text .like .far:hover + i {
+.like .far:hover + i {
   opacity: 1;
   transform: scale(1);
   transition: 1s linear;
 }
-.picture_text .like .fas {
+.like .fas {
   position: absolute;
   opacity: 0;
   background: linear-gradient(to top, #ff79da, #9356dc);
@@ -291,7 +307,13 @@ form .search::placeholder {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-top: 2rem;
+  padding: 3rem 1rem;
+}
+.nav_container_text h1 {
+  margin-bottom: 2rem;
+}
+.nav_container_text p {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -49,3 +49,16 @@
     color: $primary;
   }
 }
+
+.nouveau {
+  align-content: flex-end;
+  @include news;
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+
+
+
+}

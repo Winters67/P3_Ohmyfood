@@ -35,9 +35,10 @@
     background-color: #99e2d0;
     color: #0a8d6d;
     border-radius: 2px;
-    padding: 1rem 2rem;
+    padding: 1px 10px;
+    margin: 5px;
     z-index: auto;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 // image 
@@ -62,6 +63,7 @@
     padding: 1rem;
     margin-top: -1rem;
     z-index: 0;
+
 }
 
 // Animation coeur
@@ -69,7 +71,7 @@
 @mixin coeur {
 
     .far {
-        font-size: 4rem;
+        font-size: 3rem;
         position: absolute;
 
         &:hover {
