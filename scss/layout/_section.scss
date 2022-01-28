@@ -83,10 +83,96 @@ p {
 // Page menu
 
 .page_menu {
-
+  position: relative;
   background-color: $bg-page;
-  padding-top: -5rem;
-  margin-top: -5rem;
+  margin-top: -10rem;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+
+  &_titre {
+    display: flex;
+    padding-top: 4rem;
+    margin: 2rem;
+    font-family: $title-font;
+    justify-content: space-between;
+    font-size: 2rem;
+  }
+}
+
+.compo_menu {
+  margin: 1rem;
+  background-color: $bg-page;
+  padding: 1rem;
+
+  &_titre {
+
+    padding-bottom: 0.2rem;
+    margin: 0.2rem 1rem;
+  }
+
+  hr {
+    border-top: 3px solid $tertiary;
+    width: 4rem;
+    margin: 0.3rem 1rem;
 
 
+
+  }
+
+  &_texte {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+
+  &_choix {
+    align-items: flex-start;
+    margin-left: 0.5rem;
+    padding-top: 0.2rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  &_accompagnement {
+    align-items: flex-start;
+    margin-left: 0.5rem;
+    padding-bottom: 0.2rem;
+  }
+}
+
+.menu_check {
+  display: flex;
+  align-items: flex-end;
+
+  &_prix {
+    font-weight: bold;
+    margin-right: 2rem;
+  }
+
+  &_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $tertiary;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 7rem;
+    height: 8rem;
+    margin: -10px -10px -10px 0px;
+
+    :before {
+      border: 1px solid white;
+      border-radius: 25px;
+      background-color: white;
+      padding: 0.3rem;
+      color: $tertiary;
+    }
+
+
+
+  }
 }
