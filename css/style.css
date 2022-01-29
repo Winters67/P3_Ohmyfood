@@ -121,6 +121,20 @@ img {
     opacity: 0;
   }
 }
+@keyframes menuCheck {
+  0% {
+    opacity: 1;
+    transform: translateX(-250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.compo_menu_texte :hover {
+  cursor: pointer;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -320,6 +334,7 @@ p {
   margin: 1rem;
   padding: 1rem;
   border-radius: 20px;
+  box-shadow: 0 0 10px #d4d4d4;
 }
 .compo_menu_choix {
   align-items: flex-start;
@@ -337,6 +352,8 @@ p {
 .menu_check {
   display: flex;
   align-items: flex-end;
+  margin-right: -55px;
+  opacity: 0;
 }
 .menu_check_prix {
   font-weight: bold;

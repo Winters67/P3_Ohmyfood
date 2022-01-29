@@ -12,5 +12,24 @@
 
   }
 
+}
 
+@keyframes menuCheck {
+  0% {
+    opacity: 1;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.compo_menu_texte {
+  :hover {
+    cursor: pointer;
+
+  }
 }

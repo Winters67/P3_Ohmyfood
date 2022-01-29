@@ -120,6 +120,7 @@ p {
   }
 
   &_texte {
+
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -127,6 +128,8 @@ p {
     margin: 1rem;
     padding: 1rem;
     border-radius: 20px;
+    box-shadow: 0 0 10px #d4d4d4;
+
   }
 
   &_choix {
@@ -147,6 +150,8 @@ p {
 .menu_check {
   display: flex;
   align-items: flex-end;
+  margin-right: -55px;
+  opacity: 0;
 
   &_prix {
     font-weight: bold;
@@ -154,6 +159,7 @@ p {
   }
 
   &_icon {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,8 +177,5 @@ p {
       padding: 0.3rem;
       color: $tertiary;
     }
-
-
-
   }
 }
