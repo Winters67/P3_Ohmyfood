@@ -9,9 +9,7 @@
 
   100% {
     opacity: 0;
-
   }
-
 }
 
 @keyframes menuCheck {
@@ -26,10 +24,16 @@
   }
 }
 
+// animation menu check
+
 .compo_menu_texte:hover .compo_menu_check_icon {
   cursor: pointer;
   transform: translateX(-75%);
   transition: ease-in-out 300ms;
-  position: relative;
+  margin-left: 5rem;
   opacity: 1;
+  i {
+    transform: rotate(360deg) translateX(-5%);
+    transition: ease-in 500ms;
+  }
 }

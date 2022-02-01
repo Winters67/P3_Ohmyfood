@@ -9,13 +9,9 @@
   align-items: center;
   justify-content: center;
 
-
   h1 {
-
     font-size: 3rem;
     width: 100%;
-
-
   }
 
   .menu_1,
@@ -26,23 +22,18 @@
     height: auto;
     width: 100%;
     padding: 0.5rem;
-    margin: 1rem
+    margin: 1rem;
   }
 }
-
-
 
 // définition des images
 .picture_index {
   @include img_index;
 }
 
-
-
 // texte sous les images
 
 .picture_text {
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -55,19 +46,17 @@
 }
 
 h3 {
-
   margin: 0.2rem;
   padding: 0.2rem;
   font-size: 2rem;
   font-weight: 900;
-  grid-area: h3
+  grid-area: h3;
 }
 
 p {
   grid-area: p;
   margin: 0.2rem;
   padding-bottom: 0.8rem;
-
 }
 
 .like {
@@ -103,9 +92,11 @@ p {
   margin: 1rem;
   background-color: $bg-page;
   padding: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
 
   &_titre {
-
     padding-bottom: 0.2rem;
     margin: 0.2rem 1rem;
   }
@@ -114,13 +105,9 @@ p {
     border-top: 3px solid $tertiary;
     width: 4rem;
     margin: 0.3rem 1rem;
-
-
-
   }
 
   &_texte {
-
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -129,7 +116,6 @@ p {
     border-radius: 20px;
     box-shadow: 0 0 10px #d4d4d4;
     width: 90%;
-
   }
 
   &_choix {
@@ -148,21 +134,19 @@ p {
 }
 
 .compo_menu_check {
-  display: inline-flex;
+  position: relative;
+  display: flex;
   align-items: flex-end;
-  right: 10px;
-
-
+  right: -5.5rem;
 
   &_prix {
     font-weight: bold;
     margin-right: 2rem;
-    position: relative;
   }
 
   &_icon {
-    right: 20%;
-    opacity: 1;
+    position: relative;
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,8 +157,6 @@ p {
     height: 8rem;
     margin: -10px -10px -10px 0px;
 
-
-
     :before {
       border: 1px solid white;
       border-radius: 25px;
@@ -183,4 +165,9 @@ p {
       color: $tertiary;
     }
   }
+}
+
+.commande {
+  display: flex;
+  justify-content: center;
 }
