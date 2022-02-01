@@ -30,6 +30,10 @@ footer {
         cursor: pointer;
         text-decoration: none;
         color: white;
+
+        &:hover {
+          color: $secondary;
+        }
       }
     }
   }

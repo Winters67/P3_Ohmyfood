@@ -26,10 +26,10 @@
   }
 }
 
-
-.compo_menu_texte {
-  :hover {
-    cursor: pointer;
-
-  }
+.compo_menu_texte:hover .compo_menu_check_icon {
+  cursor: pointer;
+  transform: translateX(-75%);
+  transition: ease-in-out 300ms;
+  position: relative;
+  opacity: 1;
 }
