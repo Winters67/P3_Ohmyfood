@@ -41,6 +41,17 @@ img {
   background: linear-gradient(to top, #ff79da, #9356dc);
 }
 
+@media (min-width: 992px) {
+  .menu_fonction {
+    display: flex;
+    width: 90%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 3rem;
+    white-space: nowrap;
+  }
+}
+
 .btn_menu {
   width: 100%;
   background-color: #f6f6f6;
@@ -69,7 +80,7 @@ img {
 }
 .btn_menu i {
   color: #706f6f;
-  margin-right: 4rem;
+  margin-right: 2.5rem;
   font-size: 2rem;
   padding: 2rem 0.2rem;
 }
@@ -140,7 +151,7 @@ img {
 }
 .compo_menu_texte:hover .compo_menu_check_icon i {
   transform: rotate(360deg) translateX(-5%);
-  transition: ease-in 500ms;
+  transition: ease-out 600ms;
 }
 
 footer {
@@ -156,8 +167,32 @@ footer .logo_footer {
   margin: 2rem;
   font-family: Shrikhand, cursive;
 }
+@media (min-width: 992px) {
+  footer .logo_footer {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .logo_footer {
+    text-align: center;
+  }
+}
 footer ul {
   padding-bottom: 3rem;
+}
+@media (min-width: 992px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+  }
 }
 footer ul li {
   margin: 0.5rem 2rem;
@@ -186,11 +221,19 @@ footer ul li a:hover {
   align-items: center;
   padding-bottom: 7rem;
 }
+.fonction .menu_fonction {
+  margin: 2.5rem;
+}
 .fonction h1 {
   width: 100%;
   margin: 2rem 3rem;
   padding-left: 1rem;
   font-size: 2.5rem;
+}
+@media (min-width: 992px) {
+  .fonction h1 {
+    text-align: center;
+  }
 }
 
 .logo {
@@ -220,9 +263,29 @@ footer ul li a:hover {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 992px) {
+  .section_picture {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .section_picture {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
 .section_picture h1 {
   font-size: 3rem;
   width: 100%;
+}
+@media (min-width: 992px) {
+  .section_picture h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
 }
 .section_picture .menu_1,
 .section_picture .menu_2,
@@ -233,6 +296,22 @@ footer ul li a:hover {
   width: 100%;
   padding: 0.5rem;
   margin: 1rem;
+}
+@media (min-width: 992px) {
+  .section_picture .menu_1,
+.section_picture .menu_2,
+.section_picture .menu_3,
+.section_picture .menu_4 {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .section_picture .menu_1,
+.section_picture .menu_2,
+.section_picture .menu_3,
+.section_picture .menu_4 {
+    width: 40%;
+  }
 }
 
 .picture_index {
@@ -272,7 +351,7 @@ h3 {
 p {
   grid-area: p;
   margin: 0.2rem;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.3rem;
 }
 
 .like {
@@ -328,8 +407,18 @@ p {
   background-color: #f6f6f6;
   padding: 1rem;
 }
+@media (min-width: 992px) {
+  .compo_menu {
+    width: 60%;
+  }
+}
 .compo_menu:hover {
   cursor: pointer;
+}
+.compo_menu_carte {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .compo_menu_titre {
   padding-bottom: 0.2rem;
@@ -348,19 +437,25 @@ p {
   padding: 1rem;
   border-radius: 20px;
   box-shadow: 0 0 10px #d4d4d4;
-  width: 90%;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .compo_menu_choix {
-  align-items: flex-start;
+  text-overflow: ellipsis;
   margin-left: 0.5rem;
-  padding-top: 0.2rem;
+  padding-top: 1px 0 0 0;
   font-weight: bold;
   font-size: 1.8rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .compo_menu_accompagnement {
-  align-items: flex-start;
+  text-overflow: ellipsis;
   margin-left: 0.5rem;
   padding-bottom: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .compo_menu_check {
@@ -383,7 +478,7 @@ p {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 7rem;
-  height: 8rem;
+  height: 7.2rem;
   margin: -10px -10px -10px 0px;
 }
 .compo_menu_check_icon :before {

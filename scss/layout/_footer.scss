@@ -6,11 +6,22 @@ footer {
   color: white;
   width: 100%;
 
+
+
   .logo_footer {
 
     color: white;
     margin: 2rem;
     font-family: $title-font;
+
+    @include desktop {
+      text-align: center;
+
+    }
+
+    @include tablette {
+      text-align: center;
+    }
 
 
 
@@ -19,8 +30,22 @@ footer {
   ul {
     padding-bottom: 3rem;
 
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    @include tablette {
+      display: flex;
+      justify-content: center;
+
+    }
+
     li {
       margin: 0.5rem 2rem;
+
 
       i {
         margin-right: 1rem;
@@ -30,6 +55,7 @@ footer {
         cursor: pointer;
         text-decoration: none;
         color: white;
+
 
         &:hover {
           color: $secondary;

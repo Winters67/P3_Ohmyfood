@@ -32,8 +32,9 @@
   transition: ease-in-out 300ms;
   margin-left: 5rem;
   opacity: 1;
+
   i {
     transform: rotate(360deg) translateX(-5%);
-    transition: ease-in 500ms;
+    transition: ease-out 600ms;
   }
 }

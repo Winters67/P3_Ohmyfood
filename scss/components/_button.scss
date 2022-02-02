@@ -9,11 +9,28 @@
 
 // fonctionnement 3 items
 
+// media
+.menu_fonction {
+  @include desktop {
+    display: flex;
+    width: 90%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 3rem;
+    white-space: nowrap;
+  }
+}
+
+
+
 .btn_menu {
   width: 100%;
 
   background-color: $bg-page;
   @include cell;
+
+
+
 
   span {
     text-align: center;
@@ -31,7 +48,7 @@
 
   i {
     color: $c-icon;
-    margin-right: 4rem;
+    margin-right: 2.5rem;
     font-size: 2rem;
     padding: 2rem 0.2rem;
 
