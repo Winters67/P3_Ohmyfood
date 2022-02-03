@@ -11,6 +11,7 @@ html {
 body {
   font-family: Roboto, sans-serifxt-font;
   font-size: 1.6rem;
+  background-color: #f6f6f6;
 }
 
 ul {
@@ -297,6 +298,13 @@ footer ul li a:hover {
   padding: 0.5rem;
   margin: 1rem;
 }
+.section_picture .menu_1:hover,
+.section_picture .menu_2:hover,
+.section_picture .menu_3:hover,
+.section_picture .menu_4:hover {
+  box-shadow: 1px 3px 12px 4px #9356dc;
+  border-radius: 25px;
+}
 @media (min-width: 992px) {
   .section_picture .menu_1,
 .section_picture .menu_2,
@@ -317,7 +325,7 @@ footer ul li a:hover {
 .picture_index {
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 200px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   object-fit: cover;
@@ -393,24 +401,44 @@ p {
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
 }
+@media (min-width: 992px) {
+  .page_menu {
+    width: 100%;
+  }
+}
 .page_menu_titre {
   display: flex;
-  padding-top: 4rem;
+  padding: 5rem 0rem;
   margin: 2rem;
   font-family: Shrikhand, cursive;
   justify-content: space-between;
   font-size: 2rem;
 }
+@media (min-width: 992px) {
+  .page_menu_titre {
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 3rem;
+    margin: 0;
+  }
+}
 
-.compo_menu {
-  margin: 1rem;
+.compo {
+  margin: 0.2rem;
   background-color: #f6f6f6;
-  padding: 1rem;
 }
 @media (min-width: 992px) {
-  .compo_menu {
-    width: 60%;
+  .compo {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
   }
+}
+
+.compo_menu {
+  margin: 0.2rem;
+  background-color: #f6f6f6;
+  padding: 0.2rem;
 }
 .compo_menu:hover {
   cursor: pointer;
@@ -434,12 +462,18 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 1rem;
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 20px;
   box-shadow: 0 0 10px #d4d4d4;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+@media (min-width: 992px) {
+  .compo_menu_texte {
+    width: 380px;
+    font-size: 1.3rem;
+  }
 }
 .compo_menu_choix {
   text-overflow: ellipsis;
@@ -449,6 +483,11 @@ p {
   font-size: 1.8rem;
   white-space: nowrap;
   overflow: hidden;
+}
+@media (min-width: 992px) {
+  .compo_menu_choix {
+    font-size: 1.6rem;
+  }
 }
 .compo_menu_accompagnement {
   text-overflow: ellipsis;
@@ -492,6 +531,7 @@ p {
 .commande {
   display: flex;
   justify-content: center;
+  background-color: #f6f6f6;
 }
 
 form {

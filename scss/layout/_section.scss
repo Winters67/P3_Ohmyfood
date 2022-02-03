@@ -43,6 +43,14 @@
     padding: 0.5rem;
     margin: 1rem;
 
+    &:hover {
+      box-shadow: 1px 3px 12px 4px $primary;
+      border-radius: 25px;
+
+
+    }
+
+
     @include desktop {
       width: 40%;
     }
@@ -105,28 +113,58 @@ p {
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
 
+  @include desktop {
+
+    width: 100%;
+
+  }
+
 
 
   &_titre {
     display: flex;
-    padding-top: 4rem;
+    padding: 5rem 0rem;
     margin: 2rem;
     font-family: $title-font;
     justify-content: space-between;
     font-size: 2rem;
+
+    @include desktop {
+
+      justify-content: space-evenly;
+      width: 100%;
+      padding-bottom: 3rem;
+      margin: 0;
+
+    }
+
+
   }
 }
 
-.compo_menu {
-  margin: 1rem;
+.compo {
+
+  margin: 0.2rem;
+
   background-color: $bg-page;
-  padding: 1rem;
+
 
 
   @include desktop {
 
-    width: 60%
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+
+
   }
+}
+
+.compo_menu {
+
+  margin: 0.2rem;
+  background-color: $bg-page;
+  padding: 0.2rem;
 
 
   &:hover {
@@ -155,12 +193,18 @@ p {
     display: flex;
     justify-content: space-between;
     margin: 1rem;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 20px;
     box-shadow: 0 0 10px #d4d4d4;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
+
+    @include desktop {
+      width: 380px;
+      font-size: 1.3rem;
+
+    }
 
   }
 
@@ -172,6 +216,11 @@ p {
     font-size: 1.8rem;
     white-space: nowrap;
     overflow: hidden;
+
+    @include desktop {
+      font-size: 1.6rem;
+
+    }
 
   }
 
@@ -222,4 +271,5 @@ p {
 .commande {
   display: flex;
   justify-content: center;
+  background-color: $bg-page;
 }
