@@ -155,9 +155,8 @@ p {
     display: flex;
     gap: 1rem;
     justify-content: space-between;
-
-
   }
+
 }
 
 .compo_menu {
@@ -165,6 +164,13 @@ p {
   margin: 0.2rem;
   background-color: $bg-page;
   padding: 0.2rem;
+  width: 95%;
+
+  // @include tablette {
+  //   margin: 2rem;
+  //   width: 95%;
+  // }
+
 
 
   &:hover {

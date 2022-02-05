@@ -51,6 +51,10 @@
     height: 350px;
     object-fit: cover;
 
+    @include desktop {
+        height: 500px;
+    }
+
 
 
 }
