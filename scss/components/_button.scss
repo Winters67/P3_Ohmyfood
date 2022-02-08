@@ -3,7 +3,8 @@
 
   &:hover {
     cursor: pointer;
-    background: linear-gradient(to top, #ff79da, #9356dc);
+    box-shadow: 0 0 10px darken(rgb(212, 212, 212), 40%);
+    opacity: 0.8;
   }
 }
 

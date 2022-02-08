@@ -39,7 +39,8 @@ img {
 }
 .btn:hover {
   cursor: pointer;
-  background: linear-gradient(to top, #ff79da, #9356dc);
+  box-shadow: 0 0 10px #6e6e6e;
+  opacity: 0.8;
 }
 
 @media (min-width: 992px) {
