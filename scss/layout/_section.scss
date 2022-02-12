@@ -69,14 +69,7 @@
 // texte sous les images
 
 .picture_text {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    "h3 h3 like"
-    "p p like";
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+
   @include text_img;
 }
 
@@ -85,33 +78,40 @@ h3 {
   padding: 0.2rem;
   font-size: 2rem;
   font-weight: 900;
-  grid-area: h3;
+
 }
 
 p {
-  grid-area: p;
+
   margin: 0.2rem;
   padding-bottom: 0.3rem;
 }
 
 .like {
   display: flex;
-  align-content: center;
-  align-items: center;
+  align-content: normal;
+  align-items: flex-end;
   justify-content: flex-end;
+
   @include coeur;
-  grid-area: like;
+
   font-size: 3rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
 }
+
+
 
 // Page menu
 
 .page_menu {
+
   position: relative;
   background-color: $bg-page;
   margin-top: -10rem;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
+
 
   @include desktop {
 
@@ -124,10 +124,26 @@ p {
   &_titre {
     display: flex;
     padding: 5rem 0rem;
-    margin: 2rem;
+    margin: 1.2rem;
     font-family: $title-font;
     justify-content: space-between;
+    align-items: center;
     font-size: 2rem;
+    height: 2rem;
+
+    @include desktop {
+
+      padding: 8rem 0rem;
+
+
+    }
+
+    .like {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      height: 3rem;
+    }
 
     @include desktop {
 
@@ -135,6 +151,7 @@ p {
       width: 100%;
       padding-bottom: 3rem;
       margin: 0;
+
 
     }
 

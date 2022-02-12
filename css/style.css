@@ -459,12 +459,6 @@ footer ul li a:hover {
 }
 
 .picture_text {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "h3 h3 like" "p p like";
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   background-color: white;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -480,22 +474,21 @@ h3 {
   padding: 0.2rem;
   font-size: 2rem;
   font-weight: 900;
-  grid-area: h3;
 }
 
 p {
-  grid-area: p;
   margin: 0.2rem;
   padding-bottom: 0.3rem;
 }
 
 .like {
   display: flex;
-  align-content: center;
-  align-items: center;
+  align-content: normal;
+  align-items: flex-end;
   justify-content: flex-end;
-  grid-area: like;
   font-size: 3rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
 }
 .like .far {
   font-size: 3rem;
@@ -536,10 +529,23 @@ p {
 .page_menu_titre {
   display: flex;
   padding: 5rem 0rem;
-  margin: 2rem;
+  margin: 1.2rem;
   font-family: Shrikhand, cursive;
   justify-content: space-between;
+  align-items: center;
   font-size: 2rem;
+  height: 2rem;
+}
+@media (min-width: 992px) {
+  .page_menu_titre {
+    padding: 8rem 0rem;
+  }
+}
+.page_menu_titre .like {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 3rem;
 }
 @media (min-width: 992px) {
   .page_menu_titre {
